@@ -87,7 +87,7 @@
 /* position the blue box so it sits over top-left-to-middle area */
 #grid-section2 .gridboxblue {
   grid-column: 2 / 4; /* occupy columns 2 and 3 */
-  grid-row: 1 / 4;    /* occupy rows 1 to 3 */
+  grid-row: 1 / 4;    /* occupy all */
   z-index: 2;         /* on top of the red box */
   align-self: stretch;
   justify-self: stretch;
@@ -99,7 +99,7 @@
 /* position the red box so it sits under/behind the blue box */
 #grid-section2 .gridboxred {
   grid-column: 1 / 3; /* occupy columns 1 and 2 */
-  grid-row: 2 / 4;    /* occupy rows 2 and 3 */
+  grid-row: 2 / 2;    /* occupy center line */
   z-index: 1;         /* behind the blue box */
   align-self: stretch;
   justify-self: stretch;
