@@ -14,33 +14,35 @@
 
 /* Flexbox Part 2 */
 
-#flex-section2 ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 16px; /* small gap between columns (keeps layout neat) */
+/* Grid Part 2 */
+
+#grid-section2 .grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);   /* 6 equal columns */
+  grid-template-rows: repeat(3, 1fr);      /* 3 equal rows */
+  gap: 0;                                  /* adjust if you want spacing */
+  min-height: 360px;                       /* ensures the grid has some height */
 }
 
-#flex-section2 li {
-  flex: 1;               /* each column will take equal available space */
-  box-sizing: border-box;
-  padding: 12px;         /* internal padding so content breathes */
-  margin: 0;
+#grid-section2 .gridboxblue {
+  /* blue box rules here */
+  #grid-section2 .gridboxblue {
+  grid-column: 3 / 7;   /* start at column 3, end at 7 */
+  grid-row: 1 / 4;      /* start at row 1, end at 4 */
 }
 
-/* reorder visually without changing HTML order */
-#flex-section2 .item1 {
-  order: 1; /* displayed first */
 }
 
-#flex-section2 .item2 {
-  order: 3; /* displayed last (column 3) */
+#grid-section2 .gridboxred {
+  /* red box rules here */
+  #grid-section2 .gridboxred {
+  grid-column: 1 / 5;   /* start at column 1, end at 5 */
+  grid-row: 2 / 3;      /* start at row 2, end at 3 */
 }
 
-#flex-section2 .item3 {
-  order: 2; /* displayed in the middle (column 2) */
 }
+
+/* end Grid Part 2 */
 
 /* end Flexbox Part 2 */
 
