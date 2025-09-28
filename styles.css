@@ -92,8 +92,8 @@
   align-self: stretch;
   justify-self: stretch;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* position the red box so it sits under/behind the blue box */
@@ -104,8 +104,8 @@
   align-self: stretch;
   justify-self: stretch;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* end Grid Part 2 */
@@ -126,8 +126,8 @@
   grid-column: 1 / -1;
   grid-row: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* left middle */
@@ -135,8 +135,8 @@
   grid-column: 1 / 2;
   grid-row: 2;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* right middle */
@@ -144,8 +144,8 @@
   grid-column: 2 / 3;
   grid-row: 2;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* bottom row spans both columns */
@@ -153,8 +153,8 @@
   grid-column: 1 / -1;
   grid-row: 3;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* end Grid Part 3 */
