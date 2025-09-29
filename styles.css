@@ -2,7 +2,7 @@
 
 #flex-section1 ul {
   display: flex;
-  justify-content: space-evenly; /* equal space at beginning, between items, and end */
+  justify-content: space-evenly; 
   align-items: center;
   list-style: none;
   margin: 0;
@@ -44,7 +44,7 @@
 
 /* Flexbox Part 3 */
 
-/* center the .card both horizontally and vertically inside the .box */
+
 #flex-section3 .box {
   display: flex;
   justify-content: space-around;
@@ -53,7 +53,7 @@
   box-sizing: border-box;
 }
 
-/* turn the tags list into inline, wrapping "tag" items */
+
 #flex-section3 .tags ul {
   display: flex;
   flex-wrap: wrap;
@@ -70,9 +70,9 @@
 
 #grid-section1 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* four equal columns */
-  grid-auto-rows: 100px;                  /* rows auto-generate at 100px height */
-  gap: 20px;                              /* 20px gap between rows & columns */
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: 100px;                  
+  gap: 20px;                              
   box-sizing: border-box;
 }
 
@@ -81,11 +81,11 @@
 
 /* Grid Part 2 */
 
-/* position the blue box so it sits over top-left-to-middle area */
+
 #grid-section2 .gridboxblue {
-  grid-column: 2 / 4; /* occupy columns 2 and 3 */
-  grid-row: 1 / 4;    /* occupy all */
-  z-index: 2;         /* on top of the red box */
+  grid-column: 2 / 4; 
+  grid-row: 1 / 4;    
+  z-index: 2;         
   align-self: stretch;
   justify-self: stretch;
   display: flex;
@@ -93,11 +93,11 @@
   justify-content: flex-start;
 }
 
-/* position the red box so it sits under/behind the blue box */
+
 #grid-section2 .gridboxred {
-  grid-column: 1 / 3; /* occupy columns 1 and 2 */
-  grid-row: 2 / 2;    /* occupy center line */
-  z-index: 1;         /* behind the blue box */
+  grid-column: 1 / 3; 
+  grid-row: 2 / 2;    
+  z-index: 1;         
   align-self: stretch;
   justify-self: stretch;
   display: flex;
@@ -112,13 +112,13 @@
 
 #grid-section3 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;         /* first column twice the width of second */
-  grid-template-rows: 100px 300px 100px;  /* row heights: 100, 300, 100 */
+  grid-template-columns: 2fr 1fr;         
+  grid-template-rows: 100px 300px 100px;  
   gap: 10px;
   box-sizing: border-box;
 }
 
-/* first row spans both columns */
+
 #grid-section3 .box1 {
   grid-column: 1 / -1;
   grid-row: 1;
@@ -166,12 +166,8 @@
   padding: 20px;
   text-decoration: none;
 
-  /* transition properties:
-     - specify properties to animate (background-color and color)
-     - default transition duration when returning to normal (hover-out)
-  */
   transition-property: background-color, color;
-  transition-duration: 3s;     /* when hover ends, transition back over 3s */
+  transition-duration: 3s;     
   transition-timing-function: ease;
 }
 
@@ -179,7 +175,6 @@
   background-color: #cc0000;
   color: #fff;
 
-  /* when hovering, use a faster transition (0.5s) for the hover-in */
   transition-duration: 0.5s;
 }
 
