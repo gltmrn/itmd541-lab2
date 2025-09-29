@@ -23,23 +23,23 @@
 }
 
 #flex-section2 li {
-  flex: 1;               /* each column will take equal available space */
+  flex: 1;               
   box-sizing: border-box;
-  padding: 0px;         /* internal padding so content breathes */
+  padding: 16px;         
   margin: 0;
 }
 
-/* reorder visually without changing HTML order */
+
 #flex-section2 .item1 {
-  order: 1; /* displayed first */
+  order: 1; 
 }
 
 #flex-section2 .item2 {
-  order: 3; /* displayed last (column 3) */
+  order: 3; 
 }
 
 #flex-section2 .item3 {
-  order: 2; /* displayed in the middle (column 2) */
+  order: 2; /
 }
 
 /* end Flexbox Part 2 */
